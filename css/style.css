@@ -3,13 +3,19 @@
     margin: 0 auto;
 }
 
-.your-class > div {
-  width: 200px;
-  height: 150px;
-  background-color: #ccc;
-  border: 2px solid white;
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 60px;
+    line-height: 1;
+    opacity: .75;
+    color: gray;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 20px;
 }
-
+.slick-prev {
+    left: -80px;
+}
 .my-dots {
   position: absolute;
   bottom: -45px;
@@ -19,7 +25,6 @@
   list-style: none;
   text-align: center;
 }
-
 .my-dots li {
   position: relative;
   display: inline-block;
@@ -43,7 +48,6 @@
   outline: none;
   background: transparent;
 }
-
 .my-dots li button:hover,
 .my-dots li button:focus {
   outline: none;
@@ -66,7 +70,7 @@
   content: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg');
   text-align: center;
   opacity: .25;
-  color: black;
+  color: gray;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
    
